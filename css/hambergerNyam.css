@@ -1,4 +1,164 @@
 * { 
   font-family: 'Spoqa Han Sans Neo', 'sans-serif'; 
+}
+
+body {
   box-sizing : border-box;
+}
+
+.all {
+  margin : 2rem auto;
+}
+
+header {
+  width : 100%;
+  margin : 0 auto;
+ 
+}
+.inner {
+  width : 80%;
+  height : 100%;
+  margin : 0 auto;  
+}
+.title {
+  width : 100%;
+  height : 100px;
+  border : 5px solid #FF0022;
+  border-radius : 2rem;
+  margin : 2rem auto;
+  
+  display : flex;
+  justify-content : center;
+  align-items : center;
+
+}
+
+.title-image {
+  color : #FFDD00;
+  font-size : 3rem;
+  padding : 1.5rem;
+}
+
+.title-text {
+  font-weight :bold;
+  font-size : 1.5rem;
+}
+
+section {
+  width : 100%;
+  margin : 0 auto;
+ 
+  position : relative;
+}
+
+.contents {
+  border : 5px solid #071FB8;
+  border-collapse : collapse;
+  border-radius : 2rem;
+  width : 100%;
+  height : 500px; 
+  margin : 0 auto;
+  display : flex;
+}
+
+.brand-list {
+  width : 30%;
+  border-right : 2.5px solid #071FB8;  
+  display : flex;
+  flex-direction : column;
+  justify-content : space-around;
+  align-items : center;
+}
+
+.corporate {
+  display : flex;
+  justify-content : center;
+  width : 60%;
+  border : 1px solid rgb(251, 255, 208);
+  background-color :  rgb(251, 255, 208);
+  padding : 0.8rem;
+}
+
+.brand-name {  
+  color : black;
+  font-weight : bold;
+
+  line-height : 50px;
+  padding : 0 0.6rem;
+  font-size : 16px;
+}
+
+img {
+  width : 50px;
+  height :50px;
+  object-fit : fill;
+
+}
+
+.contents-hambergers {
+  width : 70%;
+  height : 500px;
+}
+
+.element {
+  height : 100%; 
+  position : center;
+  display : flex;
+  justify-content : space-around;
+  flex-wrap : wrap;
+  overflow : auto;
+}
+
+
+.hamberger-box{
+  margin : 1.2rem;
+  border : 1px solid #ccc;
+}
+
+
+.kfc-h_img {
+  width : 150px;
+  height : 200px;
+  background : url("/햄버거 브랜드/img/햄버거 종류/kfc징거버거.JPG") center;
+  background-size : cover;
+}
+
+.mc-h_img {
+  width : 150px;
+  height : 200px;
+  background : url("/햄버거 브랜드/img/햄버거 종류/맥도널드상하이버거.JPG") center;
+  background-size : cover;
+}
+
+.lotte-h_img {
+  width : 150px;
+  height : 200px;
+  background : url("/햄버거 브랜드/img/햄버거 종류/롯데리아핫크리스피버거.JPG") center;
+  background-size : cover;
+}
+
+.king-h_img {
+  width : 150px;
+  height : 200px;
+  background : url("/햄버거 브랜드/img/햄버거 종류/버거킹와퍼.JPG") center;
+  background-size : cover;
+}
+
+.moms-h_img {
+  width : 150px;
+  height : 200px;
+  background : url("/햄버거 브랜드/img/햄버거 종류/맘스터치싸이버거.JPG") center;
+  background-size : cover;
+}
+
+@media only screen and (min-width:1200px){
+ .inner {
+  max-width : 960px;
+ }
+}
+
+@media only screen and (max-width:980px){
+  .inner {
+    min-width : 960px;
+  }
 }
