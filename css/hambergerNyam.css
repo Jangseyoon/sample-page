@@ -10,6 +10,27 @@ body {
   margin : 2rem auto;
 }
 
+
+a:visited {
+  text-decoration : none;
+}
+
+a:link {
+  text-decoration : none;
+}
+
+.corporate a:hover .brand-name{
+  text-decoration : none;
+  color :rgb(255, 0, 102);
+  cursor : pointer;
+}
+
+.corporate a:active .brand-name{
+  text-decoration : none;
+  color :rgb(255, 0, 102);
+  cursor : pointer;
+}
+
 header {
   width : 100%;
   margin : 0 auto;
@@ -79,6 +100,14 @@ section {
   padding : 0.8rem;
 }
 
+a {
+  all : unset;
+  width : 100%;
+  display : flex;
+  justify-content : center;
+
+}
+
 .brand-name {  
   color : black;
   font-weight : bold;
@@ -102,7 +131,6 @@ img {
 
 .element {
   height : 100%; 
-  position : center;
   display : flex;
   justify-content : space-around;
   flex-wrap : wrap;
@@ -151,14 +179,56 @@ img {
   background-size : cover;
 }
 
+.answer div[class~="yeshover"] {
+  display : none;
+}
+.answer{
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  font-size : 1rem;
+  padding : 0.6rem;
+  font-weight : 400;
+  background-color : rgb(251, 255, 208);
+}
+
+
+.hamberger-box:hover .answer{
+  background-color :rgb(255, 154, 195);
+}
+
+
+/*마우스가 올라가면 ?가 사라짐*/
+.hamberger-box:hover .nonclick{
+  display : none; 
+}
+
+.hamberger-box:hover .yeshover{
+  display : flex;
+  justify-content : center;
+  align-items : center;
+}
+
 @media only screen and (min-width:1200px){
  .inner {
   max-width : 960px;
  }
 }
 
-@media only screen and (max-width:980px){
+@media only screen and (max-width:960px){
   .inner {
     min-width : 960px;
   }
+}
+
+@media only screen and (width <= 1000px){
+  .title {
+    border : 5px solid violet;
+  }
+  .contents{
+    border : 5px solid aqua;
+  }
+  .brand-list{
+    border-right : 2.5px solid aqua;  
+  }  
 }
